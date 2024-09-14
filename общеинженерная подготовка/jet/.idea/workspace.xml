@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9718d03b-1839-47e4-9800-03829bdbf32e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/данные/скорости.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/00 Pa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/00 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/10 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/20 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/30 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/40 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/50 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/60 Pa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/60 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/70 mm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/скрипты/расчёт/coefs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/скрипты/измерение/jetFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/скрипты/измерение/jetFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/скрипты/расчёт/скорости.py" beforeDir="false" afterPath="$PROJECT_DIR$/скрипты/расчёт/скорости.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2Yo9ehUFIAHoVBMIrkIAyiAHNPC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/МФТИ/лабы/общеинженерная подготовка/jet/данные"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\МФТИ\лабы\общеинженерная подготовка\jet\данные" />
+      <recent name="D:\МФТИ\лабы\общеинженерная подготовка\jet\скрипты\расчёт" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9718d03b-1839-47e4-9800-03829bdbf32e" name="Changes" comment="" />
+      <created>1701181162486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701181162486</updated>
+    </task>
+    <servers />
+  </component>
+</project>
