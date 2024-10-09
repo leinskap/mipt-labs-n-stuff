@@ -1,0 +1,97 @@
+1. Путём перебора подберите модель с наилучшим количеством соседей (1-10). Размер обучающей выборки 20%.
+
+2. У ряда полученных score посчитайте mean, median, trimmed mean 20%, variance, standart deviation, mean absolute devition, range, interquartile range. 
+
+3. Boxplot
+3.1 Варьируйте random_state (1-100).
+3.2 Постройте коробочные диаграммы для каждого количества соседей (1-10).
+3.3 Изменился лидер теперь? У кого самый низкий IQR?
+
+4. Сравнить разные метрики расстояния
+4.1 У каждого box надо взять IQR и потом у полученного списка trimmed mean 20%.
+4.2 Так надо проделать с каждой distance_metrics = ['minkowski', 'chebyshev', 'euclidean', 'manhattan', 'cosine']
+4.3 Построить plot.bar
+4.4 Добавим weights='distance' и повторим 4.1 - 4.3
+
+
+
+5. Фиксированное парзеновское окно
+5.1 Напишите gaussian kernel
+#https://proproprogs.ru/ml/ml-metody-parzenovskogo-okna-i-potencialnyh-funkciy
+x = np.linspace(0, 3, 50)
+df = pd.DataFrame({'k/x': 0.03/x, 'gaussian': x/10})
+df.plot();
+5.2 График, где в gaussian kernel x/h (h=0.5)
+5.3 В gaussian kernel x/h (h=5)
+5.4 kernel = lambda x: ... #gaussian kernel c разными h
+KNeighborsClassifier(... weights=kernel ...)
+5.5 вместо 5.4 можно поменять код с прошлого занятия, где вручную считали всё
+
+
+https://colab.research.google.com/
+
+!pip install mglearn
+!pip install --upgrade joblib==1.1.0
+#<Restart runtime>
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import mglearn
+%matplotlib inline
+from IPython.display import display
+plt.rc('font', family='Verdana')
+
+2)
+Отклонения (deviations) 
+Разница между наблюдаемыми значениями и оценкой центрального положе-
+ния. 
+Синонимы: ошибки, погрешности, остатки.
+
+Дисперсия (variance) 
+Сумма квадратичных отклонений от среднего, деленная на n −1, где n — это 
+число значений данных. 
+Синонимы: среднеквадратическое отклонение, среднеквадратическая ошибка.
+
+Стандартное отклонение (standard deviation) 
+Квадратный корень из дисперсии. 
+Синонимы: норма l2 , евклидова норма.
+
+Среднее абсолютное отклонение (mean absolute deviation) 
+Среднее абсолютных значений отклонений от среднего. 
+Синонимы: норма l1 , манхэттенская норма.
+
+Размах (range) 
+Разница между самым крупным и самым малым значениями в наборе данных.
+
+Межквартильный размах (interquartile range) 
+Разница между 75-м и 25-м процентилями. 
+Синонимы: МКР, IQR.
+
+3) https://www.codecamp.ru/blog/matplotlib-boxplot-by-group/
+# --- boxplot ---
+import pandas as pd
+import numpy as np
+import matplotlib as plt
+import seaborn as sns
+
+#create wide-form data
+df = pd.DataFrame({'A': [7, 8, 9, 12, 14],
+ 'B': [5, 6, 6, 8, 11],
+ 'C': [8, 9, 11, 13, 17]})
+
+#view data
+print(df)
+
+#create boxplot by group
+sns.boxplot(x='variable', y='value', data=pd.melt(df)).set (
+ xlabel='team', 
+ ylabel='points')
+
+4) https://scikit-learn.org/0.24/modules/generated/sklearn.neighbors.DistanceMetric.html
+minkowski sum(|x - y|^p)^(1/p)
+euclidean sqrt(sum((x - y)^2))
+manhattan sum(|x - y|)
+chebyshev max(|x - y|)
+
+Бонус: https://big-time.pro/chto-takoe-kvartil/
