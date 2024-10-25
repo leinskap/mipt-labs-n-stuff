@@ -212,7 +212,7 @@ ax.set_xlabel('$\\frac{\\nu}{\\nu_{0}}$')
 
 
 ax.scatter(nu[0]/nu0[0], U[0]/U0[0], label = 'R = 420 Ом')
-ax.scatter(nu[1][:-7]/nu0[1], U[1][:-7]/U0[1], label = 'R = 1640 Ом')
+# ax.scatter(nu[1][:-7]/nu0[1], U[1][:-7]/U0[1], label = 'R = 1640 Ом')
 ax.axhline(y = 1/2**0.2, linestyle='-.', label='$\\frac{U}{\\sqrt{U_{0}}} = \\frac{1}{\\sqrt{2}}$')
 
 coefs = np.polyfit(nu[0]/nu0[0], U[0]/U0[0], 6)
