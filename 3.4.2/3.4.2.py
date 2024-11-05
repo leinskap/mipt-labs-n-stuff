@@ -24,7 +24,7 @@ y = (t**2 - t0**2)
 ax.scatter(x, y)
 
 ax.set_xlabel('T, К')
-ax.set_ylabel('$\\tau^2 - \\tau^2$, $мкс^2$')
+ax.set_ylabel('$\\tau^2 - \\tau_0^2$, $мкс^2$')
 
 
 
@@ -62,7 +62,7 @@ print(-coefs[1]/coefs[0])
 ax.scatter(x, y)
 
 ax.set_xlabel('T, К')
-ax.set_ylabel('$\\frac{1}{\\tau^2 - \\tau^2}$, $\\frac{1}{мкс^2}$')
+ax.set_ylabel('$\\frac{1}{\\tau^2 - \\tau_0^2}$, $\\frac{1}{мкс^2}$')
 
 
 
